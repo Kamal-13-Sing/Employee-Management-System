@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Management System</title>
+<style>
+	.header{
+	border:1px solid black;
+	height:80px; width:auto;
+	}
+	.c1{
+	border:1px solid black;
+	height:460px; width:300px;
+	float:left;
+	}
+	.c2{
+	border:1px solid black;
+	height:460px; width:1000px;
+	float:right;
+	}
+	.a{
+	
+	height:300px; width:400px;
+	margin:50px 0 0 100px;
+	
+	}
+	.b{
+	
+	height:300px; width:400px;
+	margin:-300px 0 0 510px;
+	
+	}
+	
+	.h{
+	text-align:center;
+	}
+	.btn{
+	float:left;
+	padding:5px;
+	margin:10px 0 0 15px;
+	}
+	.s{
+	float:right;
+	padding:5px;
+	margin:15px;
+	}
+</style>
+</head>
+<body>
+
+<div class="header"> </div>
+
+<div class="c1"></div>
+
+<div class="c2">
+
+	<h2 class="h">Add New Employee</h2>
+	<form action="EmployeeForm" method="post">
+	
+	<div class="a">
+	
+	Employee Id: <input type="text" name="eid"><br><br><br>
+	Employee Name: <input type="text" name="name"><br><br><br>
+	Select Gender: <input type="radio" name="gender" value="Male">Male
+				   <input type="radio" name="gender" value="Female">Female<br><br><br>
+				   
+	Date Of Birth: <input type="date" name="dob"><br><br><br>
+	Address: <input type="text" name="add"><br><br><br>
+	
+	</div>
+	<div class="b">
+	
+	Email: <input type="text" name="email"><br><br><br>
+	Job Type: <input typr="text" name="jobtype"><br><br><br>
+	Join Date: <input type="date" name="joindate"><br><br><br>
+	Annual Salary: <input type="number" name="salary"><br><br><br>
+	Contact No: <input type="number" name="cno">
+	
+	</div>
+	
+	<input class="s" type="submit" value="Add Employee">
+	<input class="s" type="reset" value="Reset"> 
+	</form>
+	<button class="btn"><a href="ViewEmployee">View Employees</a></button>
+</div>
+
+
+
+</body>
+</html>
